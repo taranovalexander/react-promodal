@@ -21,13 +21,13 @@ npm install --save react-promodal
 
 ```javascript
 import React from "react";
-import ProModal from "react-promodal";
+import { ModalContainer } from "react-promodal";
 
 class Application extends React.Component {
   render () {
     return (
         <div>
-            <ProModal />
+            <ModalContainer />
             ...
         </div>
     );
@@ -60,7 +60,7 @@ export default createModal(Modal, options);
 
 You can pass `options` like second argument, but it's not necessary;
 This `options` can contains the following properties:
-- `parentNode` is any valid DOM node where modal window should be located, by default it will be <ProModal/> component location
+- `parentNode` is any valid DOM node where modal window should be located, by default it will be <ModalContainer/> component location
 
 3) Now you can import your promise-based modal and invoke it
 
