@@ -1,8 +1,8 @@
 {
   "name": "promodal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library which create promise-based modal dialogs",
-  "main": "src/index.jsx",
+  "main": "lib/index.js",
   "repository": "https://github.com/taranovalexander/react-promodal.git",
   "author": "Alexander Taranov <sander.taranov@gmail.com>",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "react": ">=16.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
@@ -36,6 +37,7 @@
     "react-dom": "16.2.1"
   },
   "scripts": {
-    "example": "NODE_ENV=development & webpack-dev-server --hot --inline"
+    "example": "NODE_ENV=development & webpack-dev-server --hot --inline",
+    "build": "babel src --out-dir lib"
   }
 }
