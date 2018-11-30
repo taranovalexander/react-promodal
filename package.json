@@ -9,7 +9,10 @@
   "keywords": [
     "promodal",
     "modal",
+    "popup",
     "promise",
+    "window",
+    "modal window",
     "promise-based",
     "react"
   ],
