@@ -1,6 +1,6 @@
 {
   "name": "promodal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library which create promise-based modal dialogs",
   "main": "src/index.jsx",
   "repository": "https://github.com/taranovalexander/react-promodal.git",
