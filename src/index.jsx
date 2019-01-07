@@ -1,13 +1,13 @@
 import React from 'react';
 import ModalGenerator from './ModalGenerator';
 
-const modal = {};
+let Modal;
 
 const ModalContainer = () => (
-  <ModalGenerator ref={(node) => { modal.node = node; }} />
+  <ModalGenerator ref={(node) => { Modal = node; }} />
 );
 
 // function to create new promise based modal
-const createModal = (Component, options) => props => modal.node.create(Component, options)(props);
+const createModal = (Component, options) => props => Modal.create(Component, options)(props);
 
 export { ModalContainer, createModal };
