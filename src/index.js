@@ -1,6 +1,13 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React from 'react';
+import ModalGenerator from './ModalGenerator';
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+let Modal;
+
+const ModalContainer = () => (
+  <ModalGenerator ref={(node) => { Modal = node; }} />
+);
+
+// function to create new promise based modal
+const createModal = (Component, options) => props => Modal.create(Component, options)(props);
+
+export { ModalContainer, createModal };
