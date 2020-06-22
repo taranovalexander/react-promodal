@@ -7,12 +7,12 @@ It's really convenient to create modals especially confirmation modals
 
 Yarn:
 ```bash
-yarn add react-promodal
+yarn add promodal
 ```
 
 npm:
 ```bash
-npm install --save react-promodal
+npm install --save promodal
 ```
 
 ## Example
@@ -21,7 +21,7 @@ npm install --save react-promodal
 
 ```javascript
 import React from "react";
-import { ModalContainer } from "react-promodal";
+import { ModalContainer } from "promodal";
 
 class App extends React.Component {
   render () {
@@ -39,7 +39,7 @@ class App extends React.Component {
 
 ```javascript
 import React from 'react';
-import { createModal } from 'react-promodal';
+import { createModal } from 'promodal';
 
 class Modal extends React.Component {
   render () {
