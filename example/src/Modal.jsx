@@ -1,5 +1,5 @@
 import React from 'react';
-import { createModal } from '../src';
+import { createModal } from 'promodal';
 
 class Modal extends React.Component {
   state = {
@@ -28,7 +28,7 @@ class Modal extends React.Component {
         <button onClick={() => submit({ name, email })}>Submit</button>
         <button onClick={cancel}>Cancel</button>
       </div>
-  );
+    );
   }
 };
 

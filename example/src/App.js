@@ -1,10 +1,10 @@
 import React from "react";
-import { ModalContainer } from '../src';
-import Modal from './Modal';
+import { ModalContainer } from 'promodal';
+import showModal from './Modal';
 
 export default class App extends React.Component {
   showModal = () => {
-    Modal().then((data) => {
+    showModal().then((data) => {
       alert(JSON.stringify(data, null, 2));
     }, () => {
       alert('rejected');
